@@ -1,0 +1,81 @@
+# .NET
+SkyloftBooking.API/bin/
+SkyloftBooking.API/obj/
+SkyloftBooking.API/out/
+SkyloftBooking.API/.vs/
+SkyloftBooking.API/appsettings.Development.json
+*.user
+*.suo
+*.cache
+*.docstates
+*.pdb
+*.log
+
+# SQLite Database
+*.db
+*.db-shm
+*.db-wal
+
+# React
+skyloft-frontend/node_modules/
+skyloft-frontend/build/
+skyloft-frontend/.env
+skyloft-frontend/.env.local
+skyloft-frontend/.env.development.local
+skyloft-frontend/.env.test.local
+skyloft-frontend/.env.production.local
+skyloft-frontend/npm-debug.log*
+skyloft-frontend/yarn-debug.log*
+skyloft-frontend/yarn-error.log*
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+
+# Logs
+logs
+*.log
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory used by tools like istanbul
+coverage/
+
+# nyc test coverage
+.nyc_output
+
+# Dependency directories
+node_modules/
+jspm_packages/
+
+# Optional npm cache directory
+.npm
+
+# Optional REPL history
+.node_repl_history
+
+# Output of 'npm pack'
+*.tgz
+
+# Yarn Integrity file
+.yarn-integrity

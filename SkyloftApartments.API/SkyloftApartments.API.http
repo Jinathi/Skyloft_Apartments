@@ -1,0 +1,6 @@
+@SkyloftApartments.API_HostAddress = http://localhost:5019
+
+GET {{SkyloftApartments.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
