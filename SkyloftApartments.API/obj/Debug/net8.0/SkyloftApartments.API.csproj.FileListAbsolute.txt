@@ -1,0 +1,8 @@
+/Users/jinathikodikara/Documents/Skyloft_Apartments/SkyloftApartments.API/obj/Debug/net8.0/SkyloftApartments.API.csproj.AssemblyReference.cache
+/Users/jinathikodikara/Documents/Skyloft_Apartments/SkyloftApartments.API/obj/Debug/net8.0/SkyloftApartments.API.GeneratedMSBuildEditorConfig.editorconfig
+/Users/jinathikodikara/Documents/Skyloft_Apartments/SkyloftApartments.API/obj/Debug/net8.0/SkyloftApartments.API.AssemblyInfoInputs.cache
+/Users/jinathikodikara/Documents/Skyloft_Apartments/SkyloftApartments.API/obj/Debug/net8.0/SkyloftApartments.API.AssemblyInfo.cs
+/Users/jinathikodikara/Documents/Skyloft_Apartments/SkyloftApartments.API/obj/Debug/net8.0/SkyloftApartments.API.csproj.CoreCompileInputs.cache
+/Users/jinathikodikara/Documents/Skyloft_Apartments/SkyloftApartments.API/obj/Debug/net8.0/SkyloftApartments.API.MvcApplicationPartsAssemblyInfo.cs
+/Users/jinathikodikara/Documents/Skyloft_Apartments/SkyloftApartments.API/obj/Debug/net8.0/SkyloftApartments.API.MvcApplicationPartsAssemblyInfo.cache
+/Users/jinathikodikara/Documents/Skyloft_Apartments/SkyloftApartments.API/obj/Debug/net8.0/SkyloftApartments.API.sourcelink.json
