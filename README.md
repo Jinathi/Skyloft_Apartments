@@ -1,10 +1,30 @@
 # Skyloft Kandy Booking System
-A full-stack booking management system for Skyloft Kandy luxury apartments, featuring a .NET Core Web API backend and React TypeScript frontend.
+A comprehensive hotel management system designed to streamline operations for Skyloft Apartments. This full-stack application handles room reservations, guest management, and staff operations through an intuitive web interface.
 
 ## About Skyloft Kandy
 Skyloft Kandy offers luxury accommodations with breathtaking mountain views in the heart of Kandy, Sri Lanka. This booking system manages reservations for our two premium apartments.
 
+##Project Overview
+The Skyloft Management Platform is being developed in two phases to demonstrate technology stack versatility and evaluate optimal enterprise solutions:
+Phase 1: React.js + ASP.NET Core + MS SQL Server
+Phase 2: React.js + Spring Boot + MySQL
+
 ## Technology Stack
+### Phase 1 (Current Implementation)
+
+- Frontend: React.js, HTML5, CSS3, Bootstrap
+- Backend: ASP.NET Core Web API
+- Database: Microsoft SQL Server
+- Authentication: JWT Authentication
+- API: RESTful API architecture
+
+### Phase 2 (Planned)
+
+- Frontend: React.js (maintained)
+- Backend: Spring Boot, Java
+- Database: MySQL
+- API: Spring Boot REST APIs
+
 ### Backend (.NET Core 8)
 
 - Framework: ASP.NET Core Web API
