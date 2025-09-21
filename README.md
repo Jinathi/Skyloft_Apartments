@@ -25,21 +25,6 @@ Phase 2: React.js + Spring Boot + MySQL
 - Database: MySQL
 - API: Spring Boot REST APIs
 
-### Backend (.NET Core 8)
-
-- Framework: ASP.NET Core Web API
-- Database: SQLite with Entity Framework Core
-- Authentication: JWT (planned)
-- Documentation: Swagger/OpenAPI
-
-### Frontend (React 18)
-
-- Framework: React with TypeScript
-- UI Library: React Bootstrap
-- HTTP Client: Axios
-- Routing: React Router
-- Form Handling: React Hook Form
-
 ## Project Structure
 <pre>skyloft-booking/
 ├── SkyloftBooking.API/         # .NET Web API
