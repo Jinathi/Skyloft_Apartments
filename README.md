@@ -110,7 +110,6 @@ This project was built to learn:
 - RESTful API design
 - Entity Framework Core
 - TypeScript integration
-- Bootstrap styling
 - Git version control
 
 ## Contributing
