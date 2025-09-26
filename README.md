@@ -12,7 +12,7 @@ Phase 2: React.js + Spring Boot + MySQL
 ## Technology Stack
 ### Phase 1 (Current Implementation)
 
-- Frontend: React.js, HTML5, CSS3, Bootstrap
+- Frontend: React.js
 - Backend: ASP.NET Core Web API
 - Database: Microsoft SQL Server
 - Authentication: JWT Authentication
