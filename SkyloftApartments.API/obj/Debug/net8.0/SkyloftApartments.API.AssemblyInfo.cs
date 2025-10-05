@@ -10,10 +10,11 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("24cf5fb2-05c4-4c46-abef-b84b478f3ff2")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("SkyloftApartments.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b4423b8572eb853b9be5df0aaee4305dda2d440e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+638ef2ff965aaa26f091ab52d95e15da9b3d40cf")]
 [assembly: System.Reflection.AssemblyProductAttribute("SkyloftApartments.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SkyloftApartments.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -8,20 +8,35 @@ import ApartmentDetail from './pages/ApartmentDetail';
 import Contact from './pages/Contact';
 import Information from './pages/Information';
 
+// App.js
+// Remove the hardcoded apartments array from App.js
+// The apartments will now be loaded from the backend in Homepage.js
+
 function App() {
   const [currentPage, setCurrentPage] = useState('home');
   const [selectedApartment, setSelectedApartment] = useState(null);
 
+  const handleViewDetails = (apartmentId) => {
+    // Note: We'll need to load the specific apartment in ApartmentDetail.js
+    setSelectedApartment({ id: apartmentId }); // Just pass the ID
+    setCurrentPage('apartment');
+  };
+
   const renderPage = () => {
     switch (currentPage) {
       case 'apartment':
-        return <ApartmentDetail apartment={selectedApartment} />;
+        return <ApartmentDetail apartmentId={selectedApartment?.id} onBack={() => setCurrentPage('home')} />;
       case 'contact':
-        return <Contact />;
+        return <Contact onBack={() => setCurrentPage('home')} />;
       case 'information':
-        return <Information />;
+        return <Information onBack={() => setCurrentPage('home')} />;
       default:
-        return <Homepage setCurrentPage={setCurrentPage} setSelectedApartment={setSelectedApartment} />;
+        return (
+          <Homepage 
+            setCurrentPage={setCurrentPage} 
+            onViewDetails={handleViewDetails}
+          />
+        );
     }
   };
 

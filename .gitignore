@@ -1,56 +1,78 @@
-# .NET
-SkyloftBooking.API/bin/
-SkyloftBooking.API/obj/
-SkyloftBooking.API/out/
-SkyloftBooking.API/.vs/
-SkyloftBooking.API/appsettings.Development.json
+# .gitignore for ASP.NET + React project
+
+# ASP.NET
+bin/
+obj/
 *.user
 *.suo
-*.cache
-*.docstates
-*.pdb
-*.log
-
-# SQLite Database
+*.userosscache
+*.sln.docstates
 *.db
 *.db-shm
 *.db-wal
 
-# React
-skyloft-frontend/node_modules/
-skyloft-frontend/build/
-skyloft-frontend/.env
-skyloft-frontend/.env.local
-skyloft-frontend/.env.development.local
-skyloft-frontend/.env.test.local
-skyloft-frontend/.env.production.local
-skyloft-frontend/npm-debug.log*
-skyloft-frontend/yarn-debug.log*
-skyloft-frontend/yarn-error.log*
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+[Oo]ut/
+msbuild.log
+msbuild.err
+msbuild.wrn
 
-# IDE
+# Visual Studio
+.vs/
 .vscode/
-.idea/
 *.swp
 *.swo
 *~
 
-# OS
+# React
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 .DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
-Thumbs.db
+*.log
 
-# Temporary files
+# Build outputs
+build/
+dist/
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# IDE
+.idea/
+*.swp
+*.swo
+
+# OS
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Database (optional - you might want to keep migrations)
+*.mdf
+*.ldf
+*.sdf
+
+# Backup files
+*.bak
 *.tmp
 *.temp
-
-# Logs
-logs
-*.log
 
 # Runtime data
 pids
@@ -61,11 +83,7 @@ pids
 # Coverage directory used by tools like istanbul
 coverage/
 
-# nyc test coverage
-.nyc_output
-
 # Dependency directories
-node_modules/
 jspm_packages/
 
 # Optional npm cache directory
