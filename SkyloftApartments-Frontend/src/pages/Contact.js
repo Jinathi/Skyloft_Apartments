@@ -1,13 +1,17 @@
 // pages/Contact.js
 import React, { useState } from 'react';
+import { contactService } from '../services/api';
 
-const Contact = () => {
+const Contact = ({ onBack }) => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
     subject: '',
     message: ''
   });
+  const [loading, setLoading] = useState(false);
+  const [submitted, setSubmitted] = useState(false);
+  const [error, setError] = useState(null);
 
   const handleInputChange = (e) => {
     setFormData({
@@ -16,21 +20,50 @@ const Contact = () => {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Handle form submission here
-    console.log('Form submitted:', formData);
-    alert('Thank you for your message! We will get back to you soon.');
-    setFormData({ name: '', email: '', subject: '', message: '' });
+    
+    if (!formData.name || !formData.email || !formData.message) {
+      setError('Please fill in all required fields.');
+      return;
+    }
+
+    try {
+      setLoading(true);
+      setError(null);
+      
+      await contactService.submitContact(formData);
+      
+      setSubmitted(true);
+      setFormData({ name: '', email: '', subject: '', message: '' });
+      
+      // Reset success message after 5 seconds
+      setTimeout(() => setSubmitted(false), 5000);
+    } catch (err) {
+      console.error('Contact form error:', err);
+      setError('Failed to submit your message. Please try again.');
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
     <div className="contact-page">
       <div className="container">
+        <button className="btn btn-secondary back-button" onClick={onBack}>
+          ← Back to Home
+        </button>
+
         <div className="page-header">
           <h1>Contact Us</h1>
           <p>Get in touch with us for any inquiries or reservations</p>
         </div>
+
+        {submitted && (
+          <div className="success-message">
+            <p>✅ Thank you for your message! We'll get back to you soon.</p>
+          </div>
+        )}
 
         <div className="contact-content">
           <div className="contact-info">
@@ -73,6 +106,12 @@ const Contact = () => {
 
           <div className="contact-form-container">
             <form className="contact-form" onSubmit={handleSubmit}>
+              {error && (
+                <div className="error-message">
+                  <p>{error}</p>
+                </div>
+              )}
+
               <div className="form-group">
                 <label htmlFor="name">Full Name *</label>
                 <input
@@ -82,6 +121,7 @@ const Contact = () => {
                   value={formData.name}
                   onChange={handleInputChange}
                   required
+                  disabled={loading}
                 />
               </div>
 
@@ -94,6 +134,7 @@ const Contact = () => {
                   value={formData.email}
                   onChange={handleInputChange}
                   required
+                  disabled={loading}
                 />
               </div>
 
@@ -105,6 +146,7 @@ const Contact = () => {
                   name="subject"
                   value={formData.subject}
                   onChange={handleInputChange}
+                  disabled={loading}
                 />
               </div>
 
@@ -117,11 +159,17 @@ const Contact = () => {
                   value={formData.message}
                   onChange={handleInputChange}
                   required
+                  disabled={loading}
+                  placeholder="Tell us about your inquiry or reservation request..."
                 ></textarea>
               </div>
 
-              <button type="submit" className="btn btn-primary full-width">
-                Send Message
+              <button 
+                type="submit" 
+                className="btn btn-primary full-width"
+                disabled={loading}
+              >
+                {loading ? 'Sending...' : 'Send Message'}
               </button>
             </form>
           </div>
