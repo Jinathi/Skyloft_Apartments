@@ -50,9 +50,6 @@ const Contact = ({ onBack }) => {
   return (
     <div className="contact-page">
       <div className="container">
-        <button className="btn btn-secondary back-button" onClick={onBack}>
-          ← Back to Home
-        </button>
 
         <div className="page-header">
           <h1>Contact Us</h1>
